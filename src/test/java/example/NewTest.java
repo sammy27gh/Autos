@@ -83,39 +83,41 @@ public class NewTest {
         	     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         	     Connection conn = DriverManager.getConnection(url, userName, password);
         	     Statement sta =  conn.createStatement();
-        	     String Sql = "select * from Books.[dbo].[InternetMarketing]";
+        	     String Sql = "select * from  Autos.[dbo].[USED VEHICLES  CAR DEALER APPROVED  WESTERN PA (1)]";
         	     ResultSet rs = sta.executeQuery(Sql);
         	     while (rs.next()) {
         	   
         	    	 System.out.println(rs.getString(1));
         	   
-        	    final String fromEmail = "HealthyandWellnessProducts"; //requires valid gmail id
-               final String pwd = "HealthyandWellnessProducts123"; // correct password for gmail id
+        	    final String fromEmail = "repairs@mobileautomechanic.info"; //requires valid gmail id
+               final String pwd = "Sk@456321"; // correct password for gmail id
               
     		// final String toEmail = (keyword); // thats to excel sheet email
                //final String toEmail = (rs.getString(1));// thats to database Email
-               final String toEmail = ("kwesi.andoh2007@gmail.com");
+               final String toEmail = (rs.getString(1));
                System.out.println("TLSEmail Start");
                Properties props = new Properties();
-               props.put("mail.smtp.host", "smtp.gmail.com"); //SMTP Host
+               props.put("mail.smtp.host", "smtp.ipage.com"); //SMTP Host
                props.put("mail.smtp.port", "587"); //TLS Port
                props.put("mail.smtp.auth", "true"); //enable authentication
                props.put("mail.smtp.starttls.enable", "true"); //enable STARTTLS
                String subject = "Congratulation on being on our list  ";
-               String body = " <h3 >Dear Customer ,<br><br> We are in the business of finding  consumers such as you "
-               		+ "great Deals on goods and services.<br> Over the years we have succeeded to reducing consumers"
-               		+ "expense on everyday purchases and suggesting services that will be cheaper.<br>"
-               		+ " We send out a lot cheap but quality products to you at an affordable "
-               		+ "price. We do the thorough work of comparing prices before making suggesting where to buy these. "
-               		+ "<br>You are not required by us to do anything but to be directed to places where you can save money. "
-               		+ "which is on the Major Websites with Money back Gurantees. "
+               String body = " <h3 >Dear Customer ,<br><br>"
+               		+ "I am the repair manager from Mobileautomechanic.info. Concerning your request for our input to help you <br>"
+               		+ "buy cars from ebay that will make you profit for your small business, we decided to look at this car we found on ebay.<br>"
+               		+ "This car is really great for the price on the bid right now. You can make more than  $1000 this week by just buying this car and reselling it.<br>"
+               		+ "Even if you get it for $3000 you can resell this car for $4000. This kind of good looking cars are rare. <br>"
+               		+ "Its a win win situation with this car from the way it looks. I think you should bid on it before its too late. "
+            		   
                		+ "<br>"
-               		+ "With that said this is one of the product we have found on belows link ...</h3><br><br><br> "
-               		+ "<h1><a href=\"http://www.anrdoezrs.net/click-8037253-12543778-1459288583000\">Find Airport Parking Rates for your Upcoming Travel </a><h1> "
+               		+ "So here is the link to the car on ebay ...</h3><br><br><br> "
+               		+ "<h1><a href=\"http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575085158&toolid=10001&campid=5337846953&customid=&icep_item=381601591958&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg"
+               		
+               		+ "\">2004 Jaguar X-Type</a><h1> "
                		+ "<br><br><br>"
                		+ "<h3>Thank You <br>"
                		+ "Samuel Andoh<br>"
-               		+ "Marketing Manager <br>"
+               		+ "Repair  Manager <br>"
 
                		+ "</h3>";// Email body goes Here 
                 

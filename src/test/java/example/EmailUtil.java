@@ -38,11 +38,11 @@ public static void sendAttachmentEmail(Session session, String toEmail, String s
          msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
          msg.addHeader("format", "flowed");
          msg.addHeader("Content-Transfer-Encoding", "8bit");
-         String subjectList = "Airport Parking Rates  ";
+         String subjectList = "Resell this car and make  $1000 this week  ";
          
-         msg.setFrom(new InternetAddress("HealthyandWellnessProducts", subjectList));
+         msg.setFrom(new InternetAddress("repairs@mobileautomechanic.info", subjectList));
  
-         msg.setReplyTo(InternetAddress.parse("HealthyandWellnessProducts", false));
+         msg.setReplyTo(InternetAddress.parse("repairs@mobileautomechanic.info", false));
  
          msg.setSubject(subject, "UTF-8");
  
