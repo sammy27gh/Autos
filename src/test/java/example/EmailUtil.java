@@ -38,7 +38,7 @@ public static void sendAttachmentEmail(Session session, String toEmail, String s
          msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
          msg.addHeader("format", "flowed");
          msg.addHeader("Content-Transfer-Encoding", "8bit");
-         String subjectList = "Resell this car and make  $1000 this week  ";
+         String subjectList = "Resell this Honda  and make over $1000 this week  ";
          
          msg.setFrom(new InternetAddress("repairs@mobileautomechanic.info", subjectList));
  
@@ -64,7 +64,7 @@ public static void sendAttachmentEmail(Session session, String toEmail, String s
  
          // Second part is attachment
          messageBodyPart = new MimeBodyPart();
-         String filename = "src/test/java/example/airport.jpg";
+         String filename = "src/test/java/example/2008Honda.jpg";
          
          DataSource source = new FileDataSource(filename);
          messageBodyPart.setDataHandler(new DataHandler(source));

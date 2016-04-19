@@ -102,18 +102,15 @@ public class NewTest {
                props.put("mail.smtp.auth", "true"); //enable authentication
                props.put("mail.smtp.starttls.enable", "true"); //enable STARTTLS
                String subject = "Congratulation on being on our list  ";
-               String body = " <h3 >Dear Customer ,<br><br>"
+               String body = " <h3 >Dear  Member ,<br><br>"
                		+ "I am the repair manager from Mobileautomechanic.info. Concerning your request for our input to help you <br>"
                		+ "buy cars from ebay that will make you profit for your small business, we decided to look at this car we found on ebay.<br>"
-               		+ "This car is really great for the price on the bid right now. You can make more than  $1000 this week by just buying this car and reselling it.<br>"
-               		+ "Even if you get it for $3000 you can resell this car for $4000. This kind of good looking cars are rare. <br>"
-               		+ "Its a win win situation with this car from the way it looks. I think you should bid on it before its too late. "
-            		   
-               		+ "<br>"
-               		+ "So here is the link to the car on ebay ...</h3><br><br><br> "
-               		+ "<h1><a href=\"http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575085158&toolid=10001&campid=5337846953&customid=&icep_item=381601591958&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg"
+               		+ "This car is really great for the price on the bid right now. You can make more than  $2500 this week by just buying this car and reselling it.<br>"
+               		+"<br>"
+               		+ "So here is the link to the car on ebay ...</h3><br><br> "
+               		+ "<h1><a href=\"http://www.ebay.com/itm/351707996914?rmvSB=true"
                		
-               		+ "\">2004 Jaguar X-Type</a><h1> "
+               		+ "\">2008 Honda </a><h1> "
                		+ "<br><br><br>"
                		+ "<h3>Thank You <br>"
                		+ "Samuel Andoh<br>"
