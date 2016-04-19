@@ -94,6 +94,7 @@ public class NewTest {
               
     		// final String toEmail = (keyword); // thats to excel sheet email
                //final String toEmail = (rs.getString(1));// thats to database Email
+              //
                final String toEmail = (rs.getString(1));
                System.out.println("TLSEmail Start");
                Properties props = new Properties();
